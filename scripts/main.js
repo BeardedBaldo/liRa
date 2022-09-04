@@ -61,7 +61,6 @@ function randomElementFromArray (arr) {
 }
 
 
-
 // Event handling
 let addButton = document.getElementById("addButton");
 addButton.addEventListener('click', addElement);

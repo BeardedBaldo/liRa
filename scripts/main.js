@@ -29,7 +29,7 @@ function displayList() {
         li.setAttribute('id', 'listItem-' + index);
         
         let deleteItem = document.createElement("button");
-        deleteItem.innerText = 'X'
+        deleteItem.innerText = 'x'
         deleteItem.setAttribute('id', 'deleteItemButton-' + item);
         deleteItem.setAttribute('class', 'deleteItemButton');
 

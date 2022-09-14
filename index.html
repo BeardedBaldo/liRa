@@ -11,13 +11,16 @@
 
     <body>
         <div id = "resultDiv">
-            <button id = "randomizeButton"> Randomize </button>
+            <button id = "randomizeButton"> Pick </button>
             <p id = "randomSelection"> </p>
         </div>    
 
         <div id = "listHeading" class = "header">
-            <h2> Current List <button id = "clearButton"> Clear </button></h2>             
-            <form>
+            <div id = "title">
+                <h2> Current List </h2>    
+                <button id = "clearButton"> Clear </button>         
+            </div>
+            <form id = "inputForm">
                 <input type = "text" id = "itemInput" placeHolder = "Enter item..." />
                 <button id = "addButton"> + </button>
             <!-- Added onclick in span tag since we can't add event listeners to span tag in JS-->
@@ -25,9 +28,10 @@
             
         </div>
 
-        
-        <ul id = "currentList">
-        </ul>
+        <div id = "listDiv">
+            <ul id = "currentList">
+            </ul>
+        </div>
 
         <script src = "scripts/main.js" defer></script>
     </body>
